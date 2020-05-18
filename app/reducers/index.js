@@ -20,6 +20,7 @@ export const fetchCandiesFromServer = () => {
   }
 }
 
+// Reducer
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_CANDIES:

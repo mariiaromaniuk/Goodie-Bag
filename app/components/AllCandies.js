@@ -43,8 +43,8 @@ const mapStateToProps = state => ({
     candies: state.all
 })
 
-const mapDispatch = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     getGoodies: () => dispatch(fetchCandiesFromServer())
 })
 
-export default connect(mapStateToProps, mapDispatch)(AllCandies);
+export default connect(mapStateToProps, mapDispatchToProps)(AllCandies);
